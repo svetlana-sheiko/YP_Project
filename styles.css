@@ -1,0 +1,1554 @@
+html {
+	
+
+	font-family:'Amatic SC', cursive;
+	width:800px; 
+	height: 10000px;
+	margin: 0px auto; 
+	background-image: url(/assets/images/back1.PNG);
+	
+}
+/* body{
+	
+	justify-content: center;
+	width:800px;
+	
+} */
+/* ------------------------------------------------- */
+/* обработка  хэдэра */
+#header{
+	 background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+	/* background-color: rgb(255,239,213); */
+	border-radius: 25px;
+
+}
+.head-text{
+
+	font-family: 'Cairo', sans-serif;
+	color: rgb(73,49,24);
+	font-size: 58px;
+	text-align: center;
+	text-shadow: 3px 4px 5px ;
+}
+.words{
+	text-align: center;
+	margin-top: -35px;
+	padding-bottom: 1px;
+}
+/* работа с розовой звёздочкой */
+.centralize{
+	display: flex;
+	justify-content: center;
+	
+}
+
+
+.d32 {
+	 right:10px; 
+	width: 80px; 
+	height: 80px; 
+	margin: 10px;
+	background: #FFC0CB;
+	position: relative;
+	}
+	.d32:before, 
+	.d32:after {
+	content: "";
+	height: 80px; 
+	width: 80px;
+	background: inherit;
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	}
+	.d32:before {
+	transform: rotate(30deg);
+	}
+	.d32:after {
+	transform: rotate(60deg);
+	}
+
+	.q{ position: relative;
+		 left:5 px;
+		bottom:84px;
+		
+	}
+	#b1{ 
+		outline: none;
+		position: relative;
+		left:8px;		/* left:419px; */
+		bottom:101px;
+		border-color: plum;
+		background-color:palevioletred;
+		border-radius: 25px;
+		font-family: 'Amatic SC', cursive;
+		font-size: large;
+		font-weight: 600;
+		width: 60px;	
+		
+	  }
+	  #b1:hover {
+		background: palevioletred;
+		box-shadow: 0 15px 20px palevioletred;
+		color: white;
+		transform: translateY(-7px);
+	  }
+
+
+
+
+/* первый блок т.е.вопрос 1 (фон) */
+#firstq{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+	/* background-color:rgb(255,239,213); */
+	border-radius: 10px;
+}
+ /* первый блок пункты в 1 вопросе */
+.text-choice{
+	line-height: 45px;;
+	display:flex;	
+font-weight: 600;
+font-size: 25px;
+
+}
+/* сам вопрос в 1 вопросе */
+#q1{
+     text-align: center;
+	font-size: 32px;
+	text-shadow: 2px 2px 2px gray ;
+}
+/* картинка в 1 блоке */
+.party{
+    position: absolute;
+	top:560px;
+    left:730px;
+	width:250px;
+	height:160px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 2px gray;
+	
+}
+/* кнопка следубющий вопрос в 1 блоке */
+.nextq-button{
+	outline: none;
+		position: relative;
+		left:30px;	
+		top:60px;
+		border-color:#ffbc40;
+		background-color: #ff7f50;
+		/* background-color:#ffd191; */
+		border-radius: 25px;
+		font-family: 'Amatic SC', cursive;
+		font-size: large;
+		font-weight: 600;
+		height:40px;
+		width: 150px;	
+	  }
+	  .nextq-button:hover {
+		background-color: #ffd191;
+		box-shadow: 0 15px 20px #ffbc40 ;
+		color: white;
+		transform: translateY(-7px);
+
+}
+/* кнопка домой  */
+.home{
+	position:absolute;
+	outline: none;
+	background-image: url('./assets/images/home-logo.png');
+    border-radius:10px;
+	width: 44px;
+    height: 34px;
+    border: none;
+	box-shadow: 2px 2px 2px gray;
+}
+/* кнопка домой именно в первом блоке */
+#home1{
+	left:500px;
+	top:695px;
+}
+ /* сам вопрос во втором блоке(2 вопрос 1 развилка) */
+#q2{
+	text-align: center;
+	font-size: 32px;
+	text-shadow: 2px 2px 2px gray ;	
+}
+ /* обработка фона во 2 блоке (2 вопрос 1 развилка)*/
+#secondq{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+	/* background-color:rgb(255,239,213); */
+	border-radius: 10px;
+}
+/* обработка самих пунктов вопроса во 2 блоке (2 вопрос 1 развилка) */
+.text-choice2{
+	line-height: 45px;;
+	display:flex;	
+font-weight: 600;
+font-size: 25px;
+}
+/* кнопка домой во 2 блоке (2 вопрос 1 развилка) */
+#home2{
+	left:500px;
+	top:1000px;
+}
+/* картинка во 2 блоке (2 вопрос 1 развилка) */
+.tasks{
+	position: absolute;
+	border-radius: 50%;
+	height: 200px;
+    left: 650px;
+	top:840px;
+	box-shadow: 3px 3px 3px black;
+
+}
+/* картинка во 2 блоке (2 вопрос 2 развилка) */
+.cinema{
+	position: absolute;
+	border-radius: 10px;
+	height: 100px;
+	width:160px;
+    left: 820px;
+	top:1120px;
+	box-shadow: 3px 3px 3px gray;
+}
+/* картинка во 2 блоке (2 вопрос 2 развилка)  */
+.purpose{
+
+	position: absolute;
+	border-radius: 10px;
+	height: 100px;
+	width:160px;
+    left: 650px;
+	top:1240px;
+	box-shadow: 3px 3px 3px gray;
+
+}
+/* обработка фона во 2 блоке (2 вопрос 2 развилка) */
+#secondq1{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+	/* background-color:rgb(255,239,213); */
+	border-radius: 10px;
+}
+/* кнопка домой во 2 блоке (2 вопрос 2 развилка) */
+#home3{
+	left:500px;
+	top:1310px;
+}
+/* обработка фона в 3 блоке (3 вопрос 1 развилка) */
+#thirdq1{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+/* обработка вопроса в 3 блоке (3 вопрос 1 развилка) */
+#q3{
+	text-align: center;
+   font-size: 32px;
+   text-shadow: 2px 2px 2px gray ;
+}
+/* обработка пунктов в 3 вопросе */
+.text-choice3{
+	line-height: 45px;;
+	display:flex;	
+font-weight: 600;
+font-size: 25px;
+}
+/* обработка фото в 3 блоке (3 вопрос 1 развилка) */
+.friends{
+	position: absolute;
+	border-radius: 10px;
+	height: 180px;
+	width:260px;
+    left: 660px;
+	top:1470px;
+	box-shadow: 3px 3px 3px gray;
+
+}
+/* кнопка домой в 3 блоке (3 вопрос 1 развилка) */
+#home4{
+	left:500px;
+	top:1614px;
+}
+
+/* обработка фона в 4 блоке (3 вопрос 2 развилка) */
+#thirdq2{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+/* обработка фото в 4 блоке (3 вопрос 2 развилка) */
+.research{
+	position: absolute;
+	border-radius: 10px;
+	height: 160px;
+	width:230px;
+    left: 660px;
+	top:1780px;
+	box-shadow: 4px 4px 4px gray;
+
+}
+/* кнопка домой в 4 блоке (3 вопрос 2 развилка) */
+#home5{
+	left:500px;
+	top:1922px;
+}
+/* обработка фона в 5 блоке (3 вопрос 3 развилка) */
+#thirdq3{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+/* обработка фото в 5 блоке (3 вопрос 3 развилка) */
+.htask{
+	position: absolute;
+	border-radius: 50%;
+	height: 170px;
+	width:235px;
+    left: 680px;
+	top:2090px;
+	 box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* кнопка домой в 5 блоке (3 вопрос 3 развилка) */
+#home6{
+	left:500px;
+	top:2228px;
+}
+
+/* обработка фона в 5 блоке (3 вопрос 4 развилка) */
+#thirdq4{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+/* обработка фото в 5 блоке (3 вопрос 3 развилка) */
+.pic{
+	position: absolute;
+	border-radius: 5px;
+	height: 185px;
+	width:270px;
+    left: 680px;
+	top:2380px;
+	 box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* кнопка домой в 5 блоке (3 вопрос 3 развилка) */
+#home7{
+	left:500px;
+	top:2535px;
+}
+
+/* обработка фона в 6 блоке(4 вопрос 1 развилка) */
+#forthq1{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+/* обработка вопроса в 6 блоке (4 вопрос 1 развилка(все развилки?)) */
+#q4{
+	text-align: center;
+   font-size: 32px;
+   text-shadow: 2px 2px 2px gray ;
+}
+/* обработка пунктов в 4 вопросе */
+.text-choice4{
+	line-height: 45px;;
+	display:flex;	
+font-weight: 600;
+font-size: 25px;
+}
+/* обработка фото в 6 блоке (4 вопрос 1 развилка) */
+.meladze{
+	position: absolute;
+	border-radius: 10px;
+	height: 180px;
+	width:260px;
+    left: 670px;
+	top:2690px;
+	box-shadow: 3px 3px 3px gray;
+
+}
+/* кнопка домой в 6 блоке (4 вопрос 1 развилка) */
+#home8{
+	left:500px;
+	top:2843px;
+}
+
+/* обработка фона в 7 блоке(4 вопрос 2 развилка) */
+#forthq2{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+
+/* обработка фото в 7 блоке (4 вопрос 2 развилка) */
+.hits{
+	position: absolute;
+	border-radius: 10px;
+	height: 185px;
+	width:275px;
+    left: 670px;
+	top:2999px;
+	box-shadow: 3px 3px 3px gray;
+
+}
+/* кнопка домой в 7 блоке (4 вопрос 2 развилка) */
+#home9{
+	left:500px;
+	top:3147px;
+}
+
+/* обработка фона в 8 блоке(4 вопрос 3 развилка) */
+#forthq3{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+
+/* обработка фото в 8 блоке (4 вопрос 3 развилка) */
+.electro{
+	position: absolute;
+	border-radius: 50%;
+	height: 220px;
+	width:220px;
+    left: 685px;
+	top:3279px;
+	box-shadow: 3px 3px 3px gray;
+
+}
+/* кнопка домой в 8 блоке (4 вопрос 3 развилка) */
+#home10{
+	left:500px;
+	top:3450px;
+}
+
+/* обработка фона в 8 блоке(4 вопрос 4 развилка) */
+#forthq4{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+
+/* обработка фото в 8 блоке (4 вопрос 4 развилка) */
+.dance{
+	position: absolute;
+	border-radius: 20px;
+	height: 200px;
+	width:290px;
+    left: 635px;
+	top:3590px;
+	box-shadow: 3px 3px 3px gray;
+
+}
+/* кнопка домой в 8 блоке (4 вопрос 4 развилка) */
+#home11{
+	left:500px;
+	top:3760px;
+}
+/* обработка фона в 9 блоке(4 вопрос 5 развилка) */
+#forthq5{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+
+/* обработка фото в 9 блоке (4 вопрос 5 развилка) */
+.rap{
+	position: absolute;
+	border-radius: 20px;
+	height: 170px;
+	width:260px;
+    left: 655px;
+	top:3910px;
+	box-shadow: 3px 3px 3px gray;
+
+}
+/* кнопка домой в 9 блоке (4 вопрос 5 развилка) */
+#home12{
+	left:500px;
+	top:4067px;
+}
+/* обработка фона в 10 блоке(4 вопрос 6 развилка) */
+#forthq6{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+
+/* обработка фото в 10 блоке (4 вопрос 6 развилка) */
+.nature{
+	position: absolute;
+	border-radius: 20px;
+	height: 170px;
+	width:260px;
+    left: 655px;
+	top:4230px;
+	box-shadow: 3px 3px 3px gray;
+
+}
+/* кнопка домой в 10 блоке (4 вопрос 6 развилка) */
+#home13{
+	left:500px;
+	top:4370px;
+}
+/* обработка фона в 11 блоке(4 вопрос 7  развилка) */
+#forthq7{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+
+/* обработка фото в 11 блоке (4 вопрос 7 развилка) */
+.stas{
+	position: absolute;
+	border-radius: 12px;
+	height: 222px;
+	width:190px;
+    left: 715px;
+	top:4502px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* кнопка домой в 11 блоке (4 вопрос 7 развилка) */
+#home14{
+	left:500px;
+	top:4680px;
+}
+
+/* обработка фона в 12 блоке(4 вопрос 8  развилка) */
+#forthq8{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+/* обработка фото в 12 блоке (4 вопрос 8 развилка) */
+.mozart{
+	position: absolute;
+	border-radius: 2px;
+	height: 222px;
+	width:190px;
+    left: 715px;
+	top:4812px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* кнопка домой в 12 блоке (4 вопрос 8 развилка) */
+#home15{
+	left:500px;
+	top:4983px;
+}
+
+
+/* обработка фона во всех блоках с результатами(res1-res16) */
+.results{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+/* обработка фото в 13 блоке (res1) */
+.coctails{
+	position:absolute;
+	height:230px;
+	width:200px;
+	left: 765px;
+	top:5107px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+	border-radius: 10px;
+
+}
+/* текст про коктейли */
+#c-text{
+	display:flex;
+	margin: 20px ; 
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	font-size: 22.5px;
+	text-shadow: 1px 1px 1px gray ;
+}
+/* кнопка домой в 13 блоке (res1) */
+#home16{
+	left:620px;
+	top:5300px;
+}
+/* обработка главной строки в результатах вопросе */
+#maintext{
+	text-align: center;
+   font-size: 32px;
+   text-shadow: 2px 2px 2px gray ;
+   
+}
+/* обработка фото в 14 блоке (res2) */
+.tecilla{
+	position:absolute;
+	border-radius: 10px;
+	height:240px;
+	width:150px;
+	left: 795px;
+	top:5410px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* текст про текиллу */
+#t-text{
+	position:absolute;
+	top:5420px;
+	justify-content: left;
+	margin: 10px ; 
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	font-size: 22.5px;
+	text-shadow: 1px 1px 1px gray ;
+}
+/* кнопка домой в 14 блоке (res2) */
+#home17{
+	left:700px;
+	top:5615px;
+}
+/* обработка фото в 15 блоке (res3) */
+.gin{
+	position:absolute;
+	border-radius: 8px;
+	height:210px;
+	width:230px;
+	left: 772px;
+	top:5745px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* текст про джин */
+#g-text{
+	position:absolute;
+	top:5740px;
+	justify-content: left;
+	margin: 10px ; 
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	font-size: 22.5px;
+	text-shadow: 1px 1px 1px gray ;
+}
+/* кнопка домой в 15 блоке (res3) */
+#home18{
+	left:250px;
+	top:5912px;
+}
+/* обработка фото в 16 блоке (res4) */
+.old{
+	position:absolute;
+	border-radius: 8px;
+	height:220px;
+	width:220px;
+	left: 780px;
+	top:6040px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* текст про олд-фэшнд */
+#o-text{
+	position:absolute;
+	top:6040px;
+	justify-content: left;
+	margin: 10px ; 
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	font-size: 22.5px;
+	text-shadow: 1px 1px 1px gray ;
+}
+/* кнопка домой в 16 блоке (res4) */
+#home19{
+	left:250px; 
+	top:6220px;
+}
+/* обработка фото в 17 блоке (res5) */
+.rom{
+	position:absolute;
+	border-radius: 8px;
+	height:235px;
+	width:165px;
+	left: 780px;
+	top:6330px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* текст про ром */
+#r-text{
+	position:absolute;
+	top:6340px;
+	justify-content: left;
+	margin: 10px ; 
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	font-size: 23px;
+	text-shadow: 1px 1px 1px gray ;
+
+}
+/* кнопка домой в 17 блоке (res5) */
+#home20{
+	left:250px;
+	top:6525px;
+}
+
+ /* обработка фото в 18 блоке (res6) */
+.punsh{
+	position:absolute;
+	border-radius: 8px;
+	height:200px;
+	width:215px;
+	left: 780px;
+	top:6650px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* текст про пунш */
+#p-text{
+	position:absolute;
+	top:6640px;
+	justify-content: left;
+	margin: 10px ; 
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	font-size: 23px;
+	text-shadow: 1px 1px 1px gray ;
+}
+ /* кнопка домой в 18 блоке (res6)  */
+#home21{
+	left:250px;
+	top:6830px;
+} 
+
+/* обработка фото в 19 блоке (res7) */
+.absent{
+	position:absolute;
+	border-radius: 8px;
+	height:235px;
+	width:165px;
+	left: 780px;
+	top:6930px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* текст про абсент */
+#a-text{
+	position:absolute;
+	top:6940px;
+	justify-content: left;
+	margin: 10px ; 
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	font-size: 22.5px;
+	text-shadow: 1px 1px 1px gray ;
+}
+/* кнопка домой в 19 блоке (res7) */
+#home22{
+	left:250px;
+	top:7135px;
+}
+
+/* обработка фото в 20 блоке (res8) */
+.cherry{
+	position:absolute;
+	/* border-radius: 8px; */
+	height:230px;
+	width:185px;
+	left: 795px;
+	top:7240px;
+	/* box-shadow:  0 0 20px rgba(0,0,0,0.5); */
+
+}
+/* текст про хмельную вишню */
+#cher-text{
+	position:absolute;
+	top:7250px;
+	justify-content: left;
+	margin: 10px ; 
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	font-size: 22.5px;
+	text-shadow: 1px 1px 1px gray ;
+}
+/* кнопка домой в 20 блоке (res8) */
+#home23{
+	left:250px;
+	top:7455px;
+}
+/* обработка фото в 21 блоке (res9) */
+.cola{
+	position:absolute;
+	border-radius: 8px;
+	height:230px;
+	width:175px;
+	left: 795px;
+	top:7550px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* текст про виски-кола */
+#cola-text{
+	display:flex;
+	margin: 20px ; 
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	font-size: 22.5px;
+	text-shadow: 1px 1px 1px gray ;
+}
+/* кнопка домой в 21 блоке (res9) */
+#home24{
+	left:700px;
+	top:7745px;
+}
+
+/* обработка фото в 22 блоке (res10) */
+.beer{
+	position:absolute;
+	border-radius: 8px;
+	height:230px;
+	width:185px;
+	left: 795px;
+	top:7855px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* текст про пиво */
+#b-text{
+	position:absolute;
+	top:7838px;
+	justify-content: left;
+	margin: 10px ; 
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	font-size: 22.5px;
+	text-shadow: 1px 1px 1px gray ;
+
+}
+/* кнопка домой в 22 блоке (res10) */
+#home25{
+	left:250px;
+	top:8055px;
+}
+/* обработка фото в 23 блоке (res11) */
+.cidre{
+	position:absolute;
+	border-radius: 8px;
+	height:225px;
+	width:240px;
+	left: 732px;
+	top:8165px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* текст про сидр */
+#cidre-text{
+	position:absolute;
+	top:8178px;
+	justify-content: left;
+	margin: 10px ; 
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	font-size: 22.5px;
+	text-shadow: 1px 1px 1px gray ;
+
+
+}
+/* кнопка домой в 23 блоке (res11) */
+#home26{
+	left:250px;
+	top:8360px;
+}
+/* обработка фото в 24 блоке (res12) */
+.vodka{
+	position:absolute;
+	border-radius: 8px;
+	height:200px;
+	width:295px;
+	left: 710px;
+	top:8495px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* текст про водку */
+#v-text{
+	
+	position:absolute;
+	top:8475px;
+	justify-content: left;
+	margin: 10px ; 
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	font-size: 22.5px;
+	text-shadow: 1px 1px 1px gray ;
+
+	
+
+}
+/* кнопка домой в 24 блоке (res12) */
+#home27{
+	left:585px;
+	top:8680px;
+}
+/* обработка фото в 25 блоке (res13) */
+.brandy{
+	position:absolute;
+	border-radius: 8px;
+	height:245px;
+	width:190px;
+	left: 775px;
+	top:8775px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* текст про бренди */
+#br-text{
+	position:absolute;
+	top:8790px;
+	justify-content: left;
+	margin: 10px ; 
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	font-size: 22.5px;
+	text-shadow: 1px 1px 1px gray ;
+
+}
+/* кнопка домой в 25 блоке (res13) */
+#home28{
+	left:250px;
+	top:8980px;
+}
+/* обработка фото в 26 блоке (res14) */
+.liquor{
+	position:absolute;
+	border-radius: 8px;
+	height:200px;
+	width:255px;
+	left: 740px;
+	top:9105px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* текст про ликёр */
+#l-text{
+	position:absolute;
+	top:9090px;
+	justify-content: left;
+	margin: 10px ; 
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	font-size: 22.5px;
+	text-shadow: 1px 1px 1px gray ;
+
+}
+/* кнопка домой в 26 блоке (res14) */
+#home29{
+	left:645px;
+	top:9270px;
+}
+/* обработка фото в 27 блоке (res15) */
+.champange{
+	position:absolute;
+	border-radius: 8px;
+	height:200px;
+	width:280px;
+	left: 725px;
+	top:9415px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* обработка текста про шампанское */
+#ch-text {
+	display:flex;
+	margin: 20px ; 
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	font-size: 22.5px;
+	text-shadow: 1px 1px 1px gray ;
+	
+}
+/* кнопка домой в 27 блоке (res15) */
+#home30{
+	left:250px;
+	top:9590px;
+}
+.wine{
+	position:absolute;
+	border-radius: 8px;
+	height:210px;
+	width:275px;
+	left: 725px;
+	top:9715px;
+	box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* кнопка домой в 27 блоке (res15) */
+#home31{
+	left:250px;
+	top:9905px;
+}
+#w-text {
+	/* display: table; */
+	position:absolute;
+	top:9670px;
+	justify-content: left;
+	margin: 10px ; 
+	white-space: pre-line; 
+	word-wrap: break-word; 
+	font-size: 22.5px;
+	text-shadow: 1px 1px 1px gray ;
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+/* *************************************************/
+/* вёрстка под планшет */
+@media screen and (max-width: 768px){
+	
+	
+	html {
+	
+
+		font-family:'Amatic SC', cursive;
+		width:768px; 
+		height: 10000px;
+		margin: 0px auto; 
+		background-image: url(/assets/images/back1.PNG);
+		background-color:green;
+	}
+
+	#header{
+		
+      position: absolute;
+	  
+	  left:100px;
+	  width:768px;
+		background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+	   /* background-color: rgb(255,239,213); */
+	   border-radius: 25px;
+   
+   }
+   .head-text{
+   
+	   font-family: 'Cairo', sans-serif;
+	   color: rgb(73,49,24);
+	   font-size: 58px;
+	   text-align: center;
+	   text-shadow: 3px 4px 5px ;
+   }
+   .words{
+	   text-align: center;
+	   margin-top: -35px;
+	   padding-bottom: 1px;
+   }
+
+   /* работа с розовой звёздочкой */
+.centralize{
+	
+	position: absolute;
+	top:300px;
+	left:384px;
+	
+}
+
+
+.d32 {
+	 right:10px; 
+	width: 80px; 
+	height: 80px; 
+	margin: 10px;
+	background: #FFC0CB;
+	position: relative;
+	}
+	.d32:before, 
+	.d32:after {
+	content: "";
+	height: 80px; 
+	width: 80px;
+	background: inherit;
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	}
+	.d32:before {
+	transform: rotate(30deg);
+	}
+	.d32:after {
+	transform: rotate(60deg);
+	}
+
+	.q{ position: relative;
+		 left:5 px;
+		bottom:84px;
+		
+	}
+	#b1{ 
+		outline: none;
+		position: relative;
+		left:8px;		/* left:419px; */
+		bottom:101px;
+		border-color: plum;
+		background-color:palevioletred;
+		border-radius: 25px;
+		font-family: 'Amatic SC', cursive;
+		font-size: large;
+		font-weight: 600;
+		width: 60px;	
+		
+	  }
+	  #b1:hover {
+		background: palevioletred;
+		box-shadow: 0 15px 20px palevioletred;
+		color: white;
+		transform: translateY(-7px);
+	  }
+
+
+
+
+/* первый блок т.е.вопрос 1 (фон) */
+#firstq{
+	height:280px;
+	left:100px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+	/* background-color:rgb(255,239,213); */
+	border-radius: 10px;
+	position: absolute;
+	width:768px;
+	top:420px;
+}
+ /* первый блок пункты в 1 вопросе */
+.text-choice{
+	line-height: 45px;;
+	display:flex;	
+font-weight: 600;
+font-size: 25px;
+
+}
+/* сам вопрос в 1 вопросе */
+#q1{
+     text-align: center;
+	font-size: 32px;
+	text-shadow: 2px 2px 2px gray ;
+}
+/* картинка в 1 блоке */
+.party{
+    position: absolute;
+	top:70px;
+    left:480px;
+	width:250px;
+	height:160px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 2px gray;
+	
+}
+/* кнопка следубющий вопрос в 1 блоке */
+.nextq-button{
+	outline: none;
+		position: relative;
+		left:140px;	
+		top:150px;
+		border-color:#ffbc40;
+		background-color: #ff7f50;
+		/* background-color:#ffd191; */
+		border-radius: 25px;
+		font-family: 'Amatic SC', cursive;
+		font-size: large;
+		font-weight: 600;
+		height:40px;
+		width: 150px;	
+	  }
+	  .nextq-button:hover {
+		background-color: #ffd191;
+		box-shadow: 0 15px 20px #ffbc40 ;
+		color: white;
+		transform: translateY(-7px);
+
+}
+/* кнопка домой  */
+.home{
+	position:absolute;
+	outline: none;
+	background-image: url('./assets/images/home-logo.png');
+    border-radius:10px;
+	width: 44px;
+    height: 34px;
+    border: none;
+	box-shadow: 2px 2px 2px gray;
+}
+/* кнопка домой именно в первом блоке */
+#home1{
+	left:300px;
+	top:215px;
+}
+
+/* сам вопрос во втором блоке(2 вопрос 1 развилка) */
+#q2{
+	text-align: center;
+	font-size: 32px;
+	text-shadow: 2px 2px 2px gray ;	
+}
+ /* обработка фона во 2 блоке (2 вопрос 1 развилка)*/
+#secondq{
+	position: absolute;
+	left:100px;
+	top:730px;
+	width:768px;
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+	/* background-color:rgb(255,239,213); */
+	border-radius: 10px;
+}
+/* обработка самих пунктов вопроса во 2 блоке (2 вопрос 1 развилка) */
+.text-choice2{
+	line-height: 45px;;
+	display:flex;	
+font-weight: 600;
+font-size: 25px;
+}
+/* кнопка домой во 2 блоке (2 вопрос 1 развилка) */
+#home2{
+	left:300px;
+	top:215px;
+}
+/* картинка во 2 блоке (2 вопрос 1 развилка) */
+.tasks{
+	position: absolute;
+	border-radius: 50%;
+	height: 200px;
+    left: 465px;
+	top:40px;
+	box-shadow: 3px 3px 3px black;
+
+}
+/* картинка во 2 блоке (2 вопрос 2 развилка) */
+.cinema{
+	position: absolute;
+	border-radius: 10px;
+	height: 100px;
+	width:160px;
+    left: 580px;
+	top:20px;
+	box-shadow: 3px 3px 3px gray;
+}
+/* картинка во 2 блоке (2 вопрос 2 развилка)  */
+.purpose{
+
+	position: absolute;
+	border-radius: 10px;
+	height: 100px;
+	width:160px;
+    left: 400px;
+	top:130px;
+	box-shadow: 3px 3px 3px gray;
+
+}
+/* обработка фона во 2 блоке (2 вопрос 2 развилка) */
+#secondq1{
+	height:280px;
+	position: absolute;
+	left: 100px;
+	top:1050px;
+	width:768px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+	/* background-color:rgb(255,239,213); */
+	border-radius: 10px;
+}
+/* кнопка домой во 2 блоке (2 вопрос 2 развилка) */
+#home3{
+	left:300px;
+	top:200px;
+}
+
+
+
+
+
+
+/* обработка фона в 3 блоке (3 вопрос 1 развилка) */
+#thirdq1{
+	
+	height:280px;
+	position: absolute;
+	left: 100px;
+	top:1380px;
+	width:768px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+
+
+/* обработка фото в 3 блоке (3 вопрос 1 развилка) */
+.friends{
+	position: absolute;
+	border-radius: 10px;
+	height: 170px;
+	width:240px;
+    left: 490px;
+	top:70px;
+	box-shadow: 3px 3px 3px gray;
+
+}
+/* кнопка домой в 3 блоке (3 вопрос 1 развилка) */
+#home4{
+	left:350px;
+	top:200px;
+}
+
+/* обработка фона в 4 блоке (3 вопрос 2 развилка) */
+#thirdq2{
+	position:absolute;
+	height:280px;
+	left:100px;
+	top:1730px;
+	width:768px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+/* обработка фото в 4 блоке (3 вопрос 2 развилка) */
+.research{
+	position: absolute;
+	border-radius: 10px;
+	height: 160px;
+	width:230px;
+    left: 460px;
+	top:80px;
+	box-shadow: 4px 4px 4px gray;
+
+}
+/* кнопка домой в 4 блоке (3 вопрос 2 развилка) */
+#home5{
+	left:300px;
+	top:230px;
+}
+
+
+/* обработка фона в 5 блоке (3 вопрос 3 развилка) */
+#thirdq3{
+
+	position:absolute;
+	height:280px;
+	left:100px;
+	top:2100px;
+	width:768px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+/* обработка фото в 5 блоке (3 вопрос 3 развилка) */
+.htask{
+	position: absolute;
+	border-radius: 50%;
+	height: 170px;
+	width:235px;
+    left: 480px;
+	top:90px;
+	 box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* кнопка домой в 5 блоке (3 вопрос 3 развилка) */
+#home6{
+	left:300px;
+	top:220px;
+}
+
+/* обработка фона в 5 блоке (3 вопрос 4 развилка) */
+#thirdq4{
+	position:absolute;
+	height:280px;
+	left:100px;
+	top:2400px;
+	width:768px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+/* обработка фото в 5 блоке (3 вопрос 3 развилка) */
+.pic{
+	position: absolute;
+	border-radius: 5px;
+	height: 185px;
+	width:270px;
+    left: 440px;
+	top:70px;
+	 box-shadow:  0 0 20px rgba(0,0,0,0.5);
+
+}
+/* кнопка домой в 5 блоке (3 вопрос 3 развилка) */
+#home7{
+	left:300px;
+	top:215px;
+}
+
+
+/* обработка фона в 6 блоке(4 вопрос 1 развилка) */
+#forthq1{
+	position:absolute;
+	left:100px;
+	top:2740px;
+	width:768px;
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+/* обработка вопроса в 6 блоке (4 вопрос 1 развилка(все развилки?)) */
+#q4{
+	text-align: center;
+   font-size: 32px;
+   text-shadow: 2px 2px 2px gray ;
+}
+/* обработка пунктов в 4 вопросе */
+.text-choice4{
+	line-height: 45px;;
+	display:flex;	
+font-weight: 600;
+font-size: 25px;
+}
+/* обработка фото в 6 блоке (4 вопрос 1 развилка) */
+.meladze{
+	position: absolute;
+	border-radius: 10px;
+	height: 180px;
+	width:260px;
+    left: 400px;
+	top:70px;
+	box-shadow: 3px 3px 3px gray;
+
+}
+/* кнопка домой в 6 блоке (4 вопрос 1 развилка) */
+#home8{
+	left:300px;
+	top:215px;
+}
+
+/* обработка фона в 7 блоке(4 вопрос 2 развилка) */
+#forthq2{
+	position:absolute;
+	left:100px;
+	top:3100px;
+	width:768px;
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+
+/* обработка фото в 7 блоке (4 вопрос 2 развилка) */
+.hits{
+	position: absolute;
+	border-radius: 10px;
+	height: 185px;
+	width:275px;
+    left: 350px;
+	top:80px;
+	box-shadow: 3px 3px 3px gray;
+
+}
+/* кнопка домой в 7 блоке (4 вопрос 2 развилка) */
+#home9{
+	left:250px;
+	top:230px;
+}
+
+
+
+
+
+/* обработка фона в 8 блоке(4 вопрос 3 развилка) */
+#forthq3{
+	position:absolute;
+	left:100px;
+	top:3450px;
+	width:768px;
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+
+/* обработка фото в 8 блоке (4 вопрос 3 развилка) */
+.electro{
+	position: absolute;
+	border-radius: 50%;
+	height: 220px;
+	width:220px;
+    left: 285px;
+	top:80px;
+	box-shadow: 3px 3px 3px gray;
+
+}
+/* кнопка домой в 8 блоке (4 вопрос 3 развилка) */
+#home10{
+	left:500px;
+	top:3450px;
+}
+
+/* обработка фона в 8 блоке(4 вопрос 4 развилка) */
+#forthq4{
+	position:absolute;
+	left:100px;
+	top:3800px;
+	width:768px;
+	
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+
+/* обработка фото в 8 блоке (4 вопрос 4 развилка) */
+.dance{
+	position: absolute;
+	border-radius: 20px;
+	height: 200px;
+	width:290px;
+    left: 635px;
+	top:3590px;
+	box-shadow: 3px 3px 3px gray;
+
+}
+/* кнопка домой в 8 блоке (4 вопрос 4 развилка) */
+#home11{
+	left:500px;
+	top:3760px;
+}
+/* обработка фона в 9 блоке(4 вопрос 5 развилка) */
+#forthq5{
+	height:280px;
+	background: radial-gradient(circle ,rgb(255,239,213),#ffcc99);
+		border-radius: 10px;
+}
+
+/* обработка фото в 9 блоке (4 вопрос 5 развилка) */
+.rap{
+	position: absolute;
+	border-radius: 20px;
+	height: 170px;
+	width:260px;
+    left: 655px;
+	top:3910px;
+	box-shadow: 3px 3px 3px gray;
+
+}
+/* кнопка домой в 9 блоке (4 вопрос 5 развилка) */
+#home12{
+	left:500px;
+	top:4067px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
